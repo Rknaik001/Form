@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(https://res.cloudinary.com/dkrt7ilhg/image/upload/v1677342227/Survey%20form/estu%CC%81dio-BG-offices-sao-paulo-14-1200x800_zil1ea.jpg);
+        background-size: cover;
+        box-sizing: border-box;
+        backdrop-filter: blur(4px); 
+        
+    }
+
+    /* .bg {
+        background-image: url(/res/estúdio-BG-offices-sao-paulo-14-1200x800.jpg);
+        background-size: cover;
+        position: absolute;
+        box-sizing: border-box;
+        filter: blur(8px);
+        z-index: 1;
+    } */
+
+    h1 {
+        text-align: center;
+        color: #ffffff;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 10px;
+        font-family: 'Nunito Sans', sans-serif
+
+    }
+
+    .whole {
+        display: grid;
+        grid-template-columns: 700px;
+        grid-template-rows: repeat(7, 120px);
+        margin: auto;
+        position: relative;
+        width: 600px;
+        gap: 20px;
+
+    }
+
+    .name {
+        background: #ffffff;
+        border-radius: 10px;
+    }
+
+    .N {
+        background: rgb(97, 67, 44);
+        padding: 10px;
+        font-weight: 500;
+        color: aliceblue;
+        border-radius: 10PX 10PX 00PX 0PX;
+    }
+
+    .input {
+        padding: 20px;
+        width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+        border: none;
+        
+    }
+
+    .input:focus {
+        outline: none;
+    }
+
+    .required {
+        border: azure solid;
+        background-color: rgb(175, 172, 172);
+        border-radius: 10px;
+        width: 65px;
+        /* height: 20px; */
+        text-align: center;
+        padding: 2px;
+        font-size: 12px;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 15px;
+        font-family: 'Nunito Sans', sans-serif !important;
+        /* font-weight: 400; */
+    }
+
+    hr {
+        width: 670px;
+        position: relative;
+        margin: auto;
+    }
+
+    .submit{
+        letter-spacing: 5px;
+        /* transform: translateY(-30%); */
+
+        font-family: 'Nunito Sans', Sans-serif, sans-serif;
+        color: aliceblue;
+        background-color: #bc8f5c;
+        margin-top: 250px;
+        width: 140px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        /* padding: 1px; */
+        text-align: center;
+        border-radius: 8px;
+        margin: auto;
+        margin-top: 10px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .button:hover {
+        background-color: #e9b376;
+    }
+    a{
+        color: rgb(7, 7, 7);
+        
+    }
+    p{
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif !important;
+        font-size: 15px;
+        margin-bottom: 200px;
+    }
+    .stick{
+        height: 50px;
+        background-color:  rgb(97, 67, 44);
+        padding: 5px;
+        box-sizing: border-box;
+        position: sticky;
+  bottom: 0;
+
+     
+    }
+    .foot{
+        /* border: 2px solid  white; */
+        text-align: center;
+       position: relative;
+     top: 8px;
+      margin: auto;
+      background-color: #ffffff;
+      width: 11%;
+      height: 25px;
+      padding: 1px 12px;
+      border-radius: 10px;
+    }
+</style>
+
+<body>
+    <div class="bg"></div>
+    <h1>ACH PVT Ltd</h1>
+    <br>
+    <div class="whole">
+        <div class="name">
+            <div class="N">1. Name</div>
+            <input class="input" type="text">
+            <hr>
+            <div class="required">Required</div>
+        </div>
+        <div class="name">
+            <div class="N">2. Date of Birth</div>
+            <input class="input" type="date">
+            <hr>
+            <div class="required">Required</div>
+        </div>
+        <div class="name">
+            <div class="N">3. Education Qualification</div>
+            <input class="input" type="text">
+            <hr>
+            <div class="required">Required</div>
+        </div>
+        <div class="name">
+            <div class="N">4. Salary Expectation</div>
+            <input class="input" type="number">
+            <hr>
+            <div class="required">Required</div>
+        </div>
+        <div class="name">
+            <div class="N">5. Place</div>
+            <input class="input" type="text">
+            <hr>
+            <div class="required">Required</div>
+        </div>
+        <div class="name">
+            <div class="N">6. Email ID</div>
+            <input class="input" type="text">
+            <hr>
+            <div class="required">Required</div>
+        </div>
+        <div class="name">
+            <div class="N">7. Mobile Number</div>
+            <input class="input" type="text">
+            <hr>
+            <div class="required">Required</div>
+        </div>
+        <div class="submit">Submit ✔️
+        </div>
+        <div class="disclaimer">
+           <p> This form content is not created or endorsed by <a href="http://"><span> SurveyHeart </span> </a> <a href="https://surveyheart.com/form/5c6cdd029f25685f413430ef?reportid=639bf44b28c89e4f5f90699f" target="_blank"><span> - Report Abuse</span> </a></p>
+        </div>
+    </div>
+    <div class="stick">
+        <div class="foot">Answered 0 of 7</div>
+    </div>
+</body>
+
+</html>
