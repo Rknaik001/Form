@@ -44,9 +44,8 @@
         display: grid;
         grid-template-columns: 700px;
         grid-template-rows: repeat(7, 120px);
-        margin: auto;
-        position: relative;
-        width: 600px;
+      margin: auto;
+        width: 700px;
         gap: 20px;
 
     }
@@ -140,6 +139,8 @@
         box-sizing: border-box;
         position: sticky;
   bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr;
 
      
     }
@@ -155,10 +156,26 @@
       padding: 1px 12px;
       border-radius: 10px;
     }
+  
+ 
+@media (max-width: 700px){
+    .stick{ width: 700px;
+        position: relative;;
+        margin: auto;
+    }
+    body{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .foot{
+        font-size: smaller;
+        padding: 0px;
+    }
+}
 </style>
 
 <body>
-    <div class="bg"></div>
+ 
     <h1>ACH PVT Ltd</h1>
     <br>
     <div class="whole">
